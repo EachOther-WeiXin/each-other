@@ -14,7 +14,7 @@ import java.util.Date;
  * 用户表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
 public class User extends Entity {

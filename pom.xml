@@ -135,7 +135,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- 使用外部tomcat容器 打包war时采用 屏蔽内嵌tomcat就行了-->
+        <!-- 使用外部tomcat容器 打包war时,解开注释 屏蔽内嵌tomcat就行了-->
         <!--<dependency>-->
             <!--<groupId>org.springframework.boot</groupId>-->
             <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
@@ -157,5 +157,11 @@
 
 
     </dependencies>
+
+    <!-- 使用外部tomcat 打包时使用 -->
+    <packaging>war</packaging>
+    <build>
+        <finalName>each-other</finalName>
+    </build>
 
 </project>

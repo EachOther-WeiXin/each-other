@@ -14,7 +14,7 @@ import java.util.Date;
  * 培训信息表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
 public class Train extends Entity {
